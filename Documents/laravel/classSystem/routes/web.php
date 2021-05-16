@@ -16,8 +16,29 @@ use App\Http\Controllers\homeController;
 
 //ログインページに飛ぶ
 Route::get('/', [homeController::class, 'loginShow'])->name('loginShow');
+//新規作成画面
+Route::get('/create', [homeController::class, 'createShow'])->name('createShow');
+//新規ユーザー登録
+Route::post('/',[homeController::class, 'userCreate'])->name('userCreate');
+//ログイン処理
 Route::post('/login', [homeController::class, 'login'])->name('login');
-Route::get('/home', [homeController::class, 'home'])->name('home');
+//ホーム画面に飛ぶ
+Route::get('admin.home', [homeController::class, 'roomNumber'])->name('home');
+//各教室画面に飛ぶ
+Route::get('admin/rooms/502', function() {
+    return view('admin/rooms/502');
+})->name('502');
+Route::get('admin/rooms/503', function() {
+    return view('admin/rooms/503');
+})->name('503');
+Route::get('admin/rooms/504', function() {
+    return view('admin/rooms/504');
+})->name('504');
+//ログアウト
+Route::get('logout', [homeController::class, 'logout'])->name('logout');
+
+
+
 
 
 

@@ -14,7 +14,7 @@
 <form class="border rounded bg-white form-login text-center" method="post" action="{{route('login')}}">
   @csrf
   <div class="d-inline-flex">
-    <h1 class="h3 my-3 mx-2">Login</h1>
+    <h1 class="h3 my-3 mx-2">ログイン</h1>
     <span style="font-size: 2em;" class="my-2"><i class="far fa-address-card"></i></span>
   </div>
   @if ($errors->any())
@@ -26,6 +26,21 @@
         </ul>
     </div>
   @endif
+  @if (session('login_error'))
+    <div class="alert alert-danger">
+      {{session('login_error')}}
+    </div>
+  @endif
+  @if (session('create_user'))
+  <div class="alert alert-success">
+    {{session('create_user')}}
+  </div>
+  @endif
+  @if (session('logout'))
+  <div class="alert alert-success">
+    {{session('logout')}}
+  </div>
+  @endif
   <div class="mb-3 pt-3">
     <input type="text" class="form-control rounded-pill" name="user_no" value="" placeholder = "学籍番号">
     <div class="invalid-feedback"></div>
@@ -35,8 +50,7 @@
     <div class="invalid-feedback"></div>
   </div>
   <button type="submit" class="btn btn-primary rounded-pill px-3 my-4">ログイン</button>
-  <button class="btn btn-secondary rounded-pill px-3 my-4">新規登録</button>
+  <a class="btn btn-secondary rounded-pill px-3 my-4" href="{{route('createShow')}}">新規登録</a>
 </form>
-
 </body>
 </html>
