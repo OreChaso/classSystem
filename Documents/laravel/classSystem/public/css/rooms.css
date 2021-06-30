@@ -68,32 +68,6 @@ header i {
   color: #333
 }
 
-.container__rooms ul {
-  padding: 0;
-}
-
-.container__rooms ul:not(first-of-type) {
-  margin-top: 50px;
-}
-
-.container__rooms li {
-  padding: 20px;
-  border: 3px solid #44679E;
-  list-style: none;
-  border-radius: 10px;
-  width: 40%;
-}
-
-.container__rooms li a {
-  font-size: 20px;
-  color:#333
-}
-
-.container__rooms li a:not(:first-of-type) {
-  font-size: 16px;
-  color: #44679E
-}
-
 .container__seat {
   display: flex;
   justify-content: center;
@@ -104,4 +78,7 @@ header i {
   flex-direction: column;
 }
 
-
+.container__btn--enter {
+  margin-top: 70px;
+  margin-bottom: 70px; 
+}

@@ -1,4 +1,4 @@
-<h1>K`sroom</h1>
+<h1>K`sRoom</h1>
 <div class="header__user">
   <p>{{Auth::user()->user_no}}</p>
   <div class="header__select">

@@ -34,7 +34,7 @@
     <div class="invalid-feedback"></div>
   </div>
   <button type="submit" class="btn btn-primary rounded-pill px-3 my-4">新規作成</button>
-  <a type="submit" class="btn btn-secondary rounded-pill px-3 my-4" href="{{route('loginShow')}}">ログイン画面</a>
+  <a type="submit" class="btn btn-secondary rounded-pill px-3 my-4" href="{{route('loginShow')}}">ログイン画面へ</a>
 </form>
 </body>
 </html>

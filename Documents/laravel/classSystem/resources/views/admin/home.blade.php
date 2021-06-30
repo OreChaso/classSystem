@@ -21,23 +21,16 @@
         </div>
       @endif
       <h3>17号館5階</h3>
-      <div class="row row-cols-2 mt-5">
-          <div class="col" style="cursor: pointer;">
-            <ul style="list-style: none; border:1px solid #333; padding: 10px 0; border-radius: 10px;"> 
-              <li style="font-size: 22px; margin: 0 20px"><a href="{{route('502')}}">502</a></li>
-            </ul>
-          </div>
-          <div class="col" style="cursor: pointer;">
-            <ul style="list-style: none; border:1px solid #333; padding: 10px 0; border-radius: 10px;"> 
-              <li style="font-size: 22px; margin: 0 20px"><a href="{{route('503')}}">503</a></li>
-            </ul>
-          </div>
-          <div class="col" style="cursor: pointer;">
-            <ul style="list-style: none; border:1px solid #333; padding: 10px 0; border-radius: 10px;"> 
-              <li style="font-size: 22px; margin: 0 20px"><a href="{{route('504')}}">504</a></li>
-            </ul>
-          </div>
-      </div>
+      <div class="w-100 mt-5 container__rooms">
+        <ul class="d-flex justify-content-around">
+          <li class=""><a href="{{route('501')}}">501</a></li>
+          <li class=""><a href="{{route('502')}}">502</a></li>
+        </ul>      
+        <ul class="d-flex justify-content-around">
+          <li class=""><a href="{{route('503')}}">503</a></li>
+          <li class=""><a href="{{route('504')}}">504</a></li>
+        </ul>
+    </div>
   </div>
 </body>
 </html>

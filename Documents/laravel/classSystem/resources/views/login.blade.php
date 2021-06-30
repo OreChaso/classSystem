@@ -50,7 +50,7 @@
     <div class="invalid-feedback"></div>
   </div>
   <button type="submit" class="btn btn-primary rounded-pill px-3 my-4">ログイン</button>
-  <a class="btn btn-secondary rounded-pill px-3 my-4" href="{{route('createShow')}}">新規登録</a>
+  <a class="btn btn-secondary rounded-pill px-3 my-4" href="{{route('createShow')}}">新規登録へ</a>
 </form>
 </body>
 </html>

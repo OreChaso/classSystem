@@ -25,6 +25,9 @@ Route::post('/login', [homeController::class, 'login'])->name('login');
 //ホーム画面に飛ぶ
 Route::get('admin.home', [homeController::class, 'roomNumber'])->name('home');
 //各教室画面に飛ぶ
+Route::get('admin/rooms/501', function() {
+    return view('admin/rooms/501');
+})->name('501');
 Route::get('admin/rooms/502', function() {
     return view('admin/rooms/502');
 })->name('502');
